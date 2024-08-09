@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+header{
+    display: flex;
+    padding: 15px;
+    box-shadow: 0 0 3px #000;
+}
+
+header li{
+    display: inline;
+    padding-left: 45px;
+
+}
+
+header li a {
+    color: #333;
+    text-decoration: none;
+    padding: 13px;
+    transition: .3s ease;
+}
+
+header li a:hover{
+    color: royalblue;
+
+}
+
+header ul #contact a{
+    color: #fff;
+    background-color: tomato;
+    border-radius: 30px;
+    float: right;
+    position: relative;
+    top: -15px;
+
+}
+
+header ul #contact a:hover{
+    background-color: cadetblue;
+}
