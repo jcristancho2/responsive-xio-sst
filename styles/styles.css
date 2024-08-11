@@ -47,9 +47,9 @@ header {
     height: 400px;
     background: #e6f14b;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(192, 95%, 50%, 0.459), hsla(207, 45%, 52%, 0.664));
+    background: -webkit-linear-gradient(to right, hsla(192, 95%, 50%, 0.459), hsla(261, 76%, 60%, 0.664));
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(212, 95%, 50%, 0.459), hsla(175, 45%, 52%, 0.664));
+    background: linear-gradient(to right, hsla(212, 95%, 50%, 0.459), hsla(268, 61%, 59%, 0.664));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
@@ -371,6 +371,22 @@ main .sobre-nosotros{
     .servicio-ind img{
         width: 90%;
     }
+
+    .f-item-con {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .app-info, .help-sec, .g-i-t {
+        text-align: center;
+        min-width: 100%; /* Full width on smaller screens */
+    }
+
+    .help-sec ul {
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
     
 }
 
@@ -440,6 +456,12 @@ main .sobre-nosotros{
     .cards .card img{
         width: 90px;
         height: 90px;
+    }
+
+    .f-item-con{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 /*----------------------------------------------------------------------------------------------------------*/
@@ -532,11 +554,12 @@ main .sobre-nosotros{
 /*+++++++++++++++++++++++++++++++++++++++++++++++*/
 footer{
     background-color: #28829e;
-    
+
 }
 .f-item-con{
+
     padding: 1.5rem 4rem;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 2rem;
 }
@@ -635,4 +658,27 @@ form .g-inp{
 
 .image-gallerys.fade-in {
     opacity: 1;
+}
+
+.fade-in {
+    opacity: 0; /* Imagen inicialmente invisible */
+    transition: opacity 2s ease-in-out; /* Duración del desvanecimiento */
+}
+
+.fade-in.visible {
+    opacity: 1; /* Imagen visible al aplicar la clase "visible" */
+}
+
+@media screen and (max-width: 480px) {
+    .app-name {
+        font-size: 1.2em;
+    }
+
+    .footer-title {
+        font-size: 1em;
+    }
+
+    .f-btn {
+        width: 100%;
+    }
 }
