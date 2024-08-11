@@ -11,19 +11,17 @@
     <a href="https://wa.me/3002120058" class="whatsapp-float" target="_blank">
         <img src="images/icons8-whatsapp.svg" alt="WhatsApp" class="whatsapp-icon">
     </a>
-    <header>
+    <header >
         <div class="logo">
             <img src="images/logoremovebg.png" class="logo-img">
             <h2 class="nombre-logo">Asesoria Especializada <br> &emsp; SG SST
             </h2>
         </div>
-        
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
         </nav>
         <div class="wave" style="height: 250px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
@@ -55,7 +53,7 @@
                 </div>
             </div>
         </section>
-        <section class="portafolio">
+        <section id="portafolio"  class="portafolio">
             <div class="contenedor">
                 <h2 class="titulo">Portafolio</h2>
                 <div class="galeria-port">
@@ -176,7 +174,7 @@
                 <!-- </div> -->
             </div>
         </section>
-        <section class="about-services">
+        <section id="servicios" class="about-services">
             <div class="contenedor">
                 <h2 class="titulo">nuestros servicios</h2>
                 <div class="servicio-cont">
@@ -208,24 +206,44 @@
             </div>
         </section>
     </main>
-<footer>
-    <div class="contenedor-footer">
-        <div class="content-foo">
-            <h4>Phone</h4>
-            <p>8296312</p>
+    <footer>
+        <div class="f-item-con">
+            <div class="app-info">
+                <span class='app-name'>
+                    <span class='app-initial'>XIO</span><br>Aserosia Expecializada
+                </span>
+                <p><br><strong>Trabaja </strong> en <strong>Equipo</strong> con <strong> Orgullo</strong> y Ponga <strong>Seguridad </strong> en cada <strong>Paso </strong> y <strong> multiplica los resultados</strong></multiplica>.</p>
+            </div>
+            <div class="help-sec">
+                <div class="footer-title">Sitio</div>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#portafolio">Portafolio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="g-i-t">
+                <div id="contacto" class="footer-title">CONTACTANOS</div>
+                <form action="/" method="post" class="space-y-2">
+                    <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+                    <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                        placeholder='Message...'></textarea>
+                    <button type="submit" class='f-btn'>Submit</button>
+                </form>
+            </div>
         </div>
-        <div class="content-foo">
-            <h4>Email</h4>
-            <p>8296312</p>
+        <div class='cr-con'>Copyright &copy; 2024 | JAC Software Solutions </div>
+        <div class="JAC-Software-Solutions" target="_blank">
+            "Hecho en Colombia con "
+            <i class="fa fa-heat">
+                &#x2764;
+            </i>
+            " por JAC Software Solutions "
         </div>
-        <div class="content-foo">
-            <h4>Location</h4>
-            <p>8296312</p>
-        </div>
-    </div>
-    <h2 class="titulo-final">&copy; </h2>
-</footer>
-    
+    </footer>
+    <script src="scripts/scripts.js"></script>
 </body>
 </html>
 

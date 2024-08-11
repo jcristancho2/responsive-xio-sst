@@ -68,7 +68,7 @@ header > a:hover{
 
 nav{
     text-align: right;
-    padding: 30px 50px 0 0;
+    padding: 40px 40px 0 0;
 }
 
 nav > a{
@@ -291,6 +291,22 @@ main .sobre-nosotros{
 
 
 @media screen and (max-width:768px){
+    .logo{
+        right: 90px;
+        position: absolute;
+        
+    }
+
+    .logo-img{
+        height: auto;
+        max-width: 100%;
+    }
+
+    .nombre-logo{
+        display: none;
+        
+    }
+
     header{
         background-position: center;
     }
@@ -369,8 +385,8 @@ main .sobre-nosotros{
     }
 
     .logo-img{
-        width: 70%; 
-        
+        height: auto;
+        max-width: 100%;
     }
 
     .nombre-logo{
@@ -450,13 +466,13 @@ main .sobre-nosotros{
 }
 
 .logo{
-    
     display: flex;
-    align-items: center;
+    align-items: left;
     text-decoration: none;
     position: relative;
-    top: -20px;
-    left: 40px;
+    margin: 5%;
+    width: 900px;
+
 }
 
 .logo img{
@@ -470,7 +486,7 @@ main .sobre-nosotros{
 }
 
 .nombre-logo{
-    margin: 0; 
+    margin: 5px; 
     padding: 0; 
     text-decoration: none; 
     color: whitesmoke;
@@ -610,4 +626,13 @@ form .g-inp{
     color: #fff;
     width: 100%;
     text-align: center;
+}
+
+.image-gallerys {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-gallerys.fade-in {
+    opacity: 1;
 }
