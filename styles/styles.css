@@ -47,9 +47,10 @@ header {
     height: 400px;
     background: #e6f14b;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f5b942, #f2c2a0);
+    background: -webkit-linear-gradient(to right, hsla(192, 95%, 50%, 0.459), hsla(261, 76%, 60%, 0.664));
+
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f5b942, #f2c2a0);
+    background: linear-gradient(to right, hsla(212, 95%, 50%, 0.459), hsla(268, 61%, 59%, 0.664));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
